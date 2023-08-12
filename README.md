@@ -16,10 +16,14 @@ Install the required libraries using the following command:
 pip install beautifulsoup4 requests
 ```
 
+## Notion
+
+- [Notion](https://www.notion.so/haminpark/Web-scrapper-b4f145b09f934fc99228b5a3524d4f21)
+
 ## References
 
-[Beautiful Soup 4 Documentation](https://www.crummy.com/software/BeautifulSoup/bs4/doc/).
-[Requests Documentation](https://docs.python-requests.org/en/latest/)
+- [Beautiful Soup 4 Documentation](https://www.crummy.com/software/BeautifulSoup/bs4/doc/).
+- [Requests Documentation](https://docs.python-requests.org/en/latest/)
 
 ## Comments
 
