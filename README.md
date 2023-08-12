@@ -1,32 +1,29 @@
-# Job Scraper created using Beautiful Soup
+# Web Scraper using Beautiful Soup 4, Requests, and Python
 
-This is a simple job scraper built using Python and Beautiful Soup to gather job listings from various job websites.
-
-## Features
-
-- Scrapes job listings from multiple job websites.
-- Allows users to filter job listings based on keywords, location, and other criteria.
-- Displays job details including title, company, location, and application link.
+This project demonstrates creating a web scraper using Python. It utilizes Beautiful Soup 4 and Requests libraries to extract and analyze data from web pages.
 
 ## Installation
 
-1. Clone this repository to your local machine using `https://github.com/haeeema/job_scrapper.git`
+The following libraries are required to run this project:
 
-## Usage
+- Python 3.x
+- Beautiful Soup 4
+- Requests
 
-1. Run the `scraper.py` script: `python scraper.py`.
-2. Follow the prompts to enter your search criteria, such as keywords and location.
-3. View the scraped job listings with the provided details.
+Install the required libraries using the following command:
 
-## Contributing
+```bash
+pip install beautifulsoup4 requests
+```
 
-Contributions are welcome! If you would like to contribute to this project, please follow these steps:
+## References
 
-1. Fork the repository.
-2. Create a new branch: `git checkout -b feature-new-feature`.
-3. Make your changes and commit them: `git commit -m 'Add new feature'`.
-4. Push to the branch: `git push origin feature-new-feature`.
-5. Open a pull request.
+[Beautiful Soup 4 Documentation](https://www.crummy.com/software/BeautifulSoup/bs4/doc/).
+[Requests Documentation](https://docs.python-requests.org/en/latest/)
+
+## Comments
+
+This example should help you get started with creating a web scraper using Beautiful Soup 4 and Requests in Python. In a real-world project, you can add more features and error handling. Remember to always respect the website's robots exclusion standard (robots.txt) and check their terms of service while developing.
 
 ## License
 
