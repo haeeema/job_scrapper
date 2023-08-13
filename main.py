@@ -8,6 +8,7 @@ response = get(f"{base_url}{search_term}")
 if response.status_code != 200:
     print("Can't request website")
 else:
+    results = []
     soup = BeautifulSoup(response.text, "html.parser")
     # "html.parser" tells Beautifulsoup to send HTML.
     jobs = soup.find_all("section", class_="jobs")
@@ -18,5 +19,19 @@ else:
         job_posts.pop(-1)
         # pop method is for removing view-all list, it is located on the last of the list.
         for post in job_posts:
-            print(post)
-            print("//////////////")
+            anchors = post.find_all("a")
+            anchor = anchors[1]
+            link = anchor["href"]
+            company, kind, region = anchor.find_all("span", class_="company")
+            # Shortcut
+            title = anchor.find("span", class_="title")
+            job_data = {
+                "link": f"https://weworkremotely.com{link}",
+                "company": company.string,
+                "region": region.string,
+                "position": title.string,
+            }
+            results.append(job_data)
+    for result in results:
+        print(result)
+        print("/////////////////////")

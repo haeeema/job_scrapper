@@ -18,7 +18,7 @@ pip install beautifulsoup4 requests
 
 ## Notion
 
-- [Notion](https://www.notion.so/haminpark/Web-scrapper-b4f145b09f934fc99228b5a3524d4f21)
+- [Web scrapper log](https://www.notion.so/haminpark/Web-scrapper-b4f145b09f934fc99228b5a3524d4f21)
 
 ## References
 
